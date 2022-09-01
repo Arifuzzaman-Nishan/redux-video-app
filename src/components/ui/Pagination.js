@@ -13,7 +13,7 @@ export default function Pagination() {
         <section className="pt-12">
             <div className="max-w-7xl mx-auto px-5 py-6 lg:px-0 flex gap-2 justify-end cursor-pointer">
                 {pageno.map(page => (
-                    <div onClick={() => handlePagination(page)} className={`px-4 py-1 rounded-full ${page === selectPage? "bg-blue-600 text-white":"bg-blue-100"}`}>
+                    <div key={page} onClick={() => handlePagination(page)} className={`px-4 py-1 rounded-full ${page === selectPage? "bg-blue-600 text-white":"bg-blue-100"}`}>
                         {page}
                     </div>
                 ))}
