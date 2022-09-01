@@ -13,7 +13,7 @@ export default function VideoDescription({ video }) {
                     Uploaded on {date}
                 </h2>
 
-                <LikeUnlike />
+                <LikeUnlike video={video} />
             </div>
 
             <div className="mt-4 text-sm text-[#334155] dark:text-slate-400">
