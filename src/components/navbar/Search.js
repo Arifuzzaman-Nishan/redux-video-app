@@ -1,15 +1,14 @@
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useMatch, useNavigate } from "react-router-dom";
-import { searched } from "../../features/filter/filterSlice";
+import { searched,setInput } from "../../features/filter/filterSlice";
 
 export default function Search() {
     const dispatch = useDispatch();
-    const { search } = useSelector((state) => state.filter);
-    const [input, setInput] = useState(search);
+    const { input } = useSelector((state) => state.filter);
 
     const match = useMatch("/");
     const navigate = useNavigate();
+
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -29,7 +28,7 @@ export default function Search() {
                 name="search"
                 placeholder="Search"
                 value={input}
-                onChange={(e) => setInput(e.target.value)}
+                onChange={(e) => dispatch(setInput(e.target.value))}
             />
         </form>
     );
