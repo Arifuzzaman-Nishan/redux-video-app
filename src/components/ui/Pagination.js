@@ -1,9 +1,15 @@
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { pageSelected } from "../../features/pagination/paginationSlice";
+import { pageSelected, setPageno } from "../../features/pagination/paginationSlice";
 
 export default function Pagination() {
     const {pageno,selectPage} = useSelector(state => state.pagination);
+    const {totalVideos} = useSelector(state => state.videos);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(setPageno(totalVideos));
+    },[totalVideos])
 
     const handlePagination = (pageNumber) => {
         dispatch(pageSelected(pageNumber));

@@ -11,11 +11,7 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/6O4s7v28nlw",
       "thumbnail": "https://i3.ytimg.com/vi/6O4s7v28nlw/maxresdefault.jpg",
-      "tags": [
-        "javascript",
-        "react",
-        "tips"
-      ],
+      "tags": ["javascript", "react", "tips"],
       "likes": 5,
       "unlikes": 3,
       "dislikes": 1
@@ -31,10 +27,7 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/N-U6AVcIPy4",
       "thumbnail": "https://i3.ytimg.com/vi/N-U6AVcIPy4/maxresdefault.jpg",
-      "tags": [
-        "vscode",
-        "tips"
-      ],
+      "tags": ["vscode", "tips"],
       "likes": 0,
       "unlikes": 0
     },
@@ -49,10 +42,7 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/4M7D3O2XX4o",
       "thumbnail": "https://i3.ytimg.com/vi/4M7D3O2XX4o/maxresdefault.jpg",
-      "tags": [
-        "tailwind",
-        "css"
-      ],
+      "tags": ["tailwind", "css"],
       "likes": 1,
       "unlikes": 0
     },
@@ -67,11 +57,7 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/dD9O8DnIBj4",
       "thumbnail": "https://i3.ytimg.com/vi/dD9O8DnIBj4/maxresdefault.jpg",
-      "tags": [
-        "debounce",
-        "javascript",
-        "tips"
-      ],
+      "tags": ["debounce", "javascript", "tips"],
       "likes": 0,
       "unlikes": 0
     },
@@ -86,11 +72,7 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/4tV1Mfi4fMA",
       "thumbnail": "https://i3.ytimg.com/vi/4tV1Mfi4fMA/maxresdefault.jpg",
-      "tags": [
-        "sass",
-        "css",
-        "ui"
-      ],
+      "tags": ["sass", "css", "ui"],
       "likes": 0,
       "unlikes": 0
     },
@@ -105,11 +87,7 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/34tjWL9wi4g",
       "thumbnail": "https://i3.ytimg.com/vi/34tjWL9wi4g/maxresdefault.jpg",
-      "tags": [
-        "react",
-        "router",
-        "javascript"
-      ],
+      "tags": ["react", "router", "javascript"],
       "likes": 0,
       "unlikes": 0
     },
@@ -124,11 +102,7 @@
       "views": "2.1k",
       "link": "https://www.youtube-nocookie.com/embed/smDa6hoxLKI",
       "thumbnail": "https://i3.ytimg.com/vi/smDa6hoxLKI/maxresdefault.jpg",
-      "tags": [
-        "tailwind",
-        "css",
-        "ui"
-      ],
+      "tags": ["tailwind", "css", "ui"],
       "likes": 0,
       "unlikes": 0
     }

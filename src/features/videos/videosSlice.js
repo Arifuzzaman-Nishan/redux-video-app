@@ -4,6 +4,7 @@ const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
 
 const initialState = {
     videos: [],
+    totalVideos: '',
     isLoading: false,
     isError: false,
     error: "",
@@ -29,7 +30,8 @@ const videoSlice = createSlice({
             })
             .addCase(fetchVideos.fulfilled, (state, action) => {
                 state.isLoading = false;
-                state.videos = action.payload;
+                state.videos = action.payload.videos;
+                state.totalVideos = action.payload.totalVideos;
             })
             .addCase(fetchVideos.rejected, (state, action) => {
                 state.isLoading = false;

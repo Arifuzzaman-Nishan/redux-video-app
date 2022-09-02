@@ -18,5 +18,5 @@ export const getVideos = async (tags, search,pageNumber) => {
 
     const response = await axios.get(`/videos/?${queryString}`);
 
-    return response.data;
+    return {videos: response.data,totalVideos: response.headers['x-total-count']};
 };
