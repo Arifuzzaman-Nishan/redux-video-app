@@ -9,7 +9,7 @@ export default function Pagination() {
 
     useEffect(() => {
         dispatch(setPageno(totalVideos));
-    },[totalVideos])
+    },[dispatch, totalVideos])
 
     const handlePagination = (pageNumber) => {
         dispatch(pageSelected(pageNumber));

@@ -11,11 +11,11 @@ export default function VideGrid() {
     );
     
     const {selectPage,perPageVideos} = useSelector(state => state.pagination);
-    const { tags, search } = useSelector((state) => state.filter);
+    const { tags, search,authorName } = useSelector((state) => state.filter);
 
     useEffect(() => {
-        dispatch(fetchVideos({ tags, search ,selectPage,perPageVideos}));
-    }, [dispatch, tags, search,selectPage,perPageVideos]);
+        dispatch(fetchVideos({ tags,search,selectPage,authorName,perPageVideos}));
+    }, [dispatch, tags, search,selectPage,perPageVideos,authorName]);
 
     // decide what to render
     let content;

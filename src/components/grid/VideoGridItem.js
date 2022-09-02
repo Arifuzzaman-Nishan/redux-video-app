@@ -1,13 +1,16 @@
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { fetchVideos } from "../../features/videos/videosSlice";
+import { reset, setAuthorName } from "../../features/filter/filterSlice";
+import { resetPagination } from '../../features/pagination/paginationSlice';
 
 export default function VideoGridItem({ video = {} }) {
     const dispatch = useDispatch();
     const { id, thumbnail, title, duration, author, avatar, views, date } = video;
 
     const handleAuthorFilter = (authorName) => {
-        dispatch(fetchVideos({authorName}))
+        dispatch(reset());
+        dispatch(resetPagination());
+        dispatch(setAuthorName(authorName));
     }
 
     return (
