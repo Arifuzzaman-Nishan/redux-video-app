@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { reset } from "../../features/filter/filterSlice";
+import { resetPagination } from "../../features/pagination/paginationSlice";
 import { fetchTags } from "../../features/tags/tagsSlice";
 import Tag from "./Tag";
 
@@ -12,7 +13,10 @@ export default function Tags() {
         dispatch(fetchTags());
     }, [dispatch]);
 
-    const handleReset = () => dispatch(reset());
+    const handleReset = () => {
+        dispatch(reset());
+        dispatch(resetPagination());
+    }
     
     return tags?.length > 0 ? (
         <section>

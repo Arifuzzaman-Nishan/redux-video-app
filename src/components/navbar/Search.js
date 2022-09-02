@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useMatch, useNavigate } from "react-router-dom";
-import { searched,setInput } from "../../features/filter/filterSlice";
+import { searched, setInput } from "../../features/filter/filterSlice";
+import { pageSelected } from "../../features/pagination/paginationSlice";
 
 export default function Search() {
     const dispatch = useDispatch();
@@ -13,6 +14,7 @@ export default function Search() {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(searched(input));
+        dispatch(pageSelected(1));
 
         // if user is not in home page, redirect to home page
         if (!match) {

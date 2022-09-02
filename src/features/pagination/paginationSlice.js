@@ -16,9 +16,12 @@ const paginationSlice = createSlice({
         setPageno: (state,action) => {
             const totalPage = Math.round(action.payload/state.perPageVideos);
             state.pageno = Array.from({length: totalPage}, (_, i) => i + 1);
+        },
+        resetPagination: (state,action) => {
+            state.selectPage = 1;
         }
     }
 })
 
-export const {pageSelected,setPageno} = paginationSlice.actions;
+export const {pageSelected,setPageno,resetPagination} = paginationSlice.actions;
 export default paginationSlice.reducer;
