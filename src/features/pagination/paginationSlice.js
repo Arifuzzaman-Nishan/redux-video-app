@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     pageno: [],
-    selectPage: 1
+    selectPage: 1,
+    perPageVideos: 3
 }
 
 const paginationSlice = createSlice({
@@ -13,8 +14,7 @@ const paginationSlice = createSlice({
             state.selectPage = action.payload
         },
         setPageno: (state,action) => {
-            const perPageVideos = 2;
-            const totalPage = Math.round(action.payload/perPageVideos);
+            const totalPage = Math.round(action.payload/state.perPageVideos);
             state.pageno = Array.from({length: totalPage}, (_, i) => i + 1);
         }
     }

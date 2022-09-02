@@ -1,7 +1,6 @@
 import axios from "../../utils/axios";
 
-export const getVideos = async (tags, search,pageNumber,authorName="") => {
-    const perPageShowVideo = 2;
+export const getVideos = async (tags, search,pageNumber,authorName="",perPageShowVideo) => {
     
     // let end = perPageShowVideo*parseInt(pageNumber);
     // let start = end - perPageShowVideo;

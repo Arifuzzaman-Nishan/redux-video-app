@@ -4,8 +4,7 @@ import { fetchVideos } from "../../features/videos/videosSlice";
 
 export default function VideoGridItem({ video = {} }) {
     const dispatch = useDispatch();
-    const { id, thumbnail, title, duration, author, avatar, views, date } =
-        video;
+    const { id, thumbnail, title, duration, author, avatar, views, date } = video;
 
     const handleAuthorFilter = (authorName) => {
         dispatch(fetchVideos({authorName}))

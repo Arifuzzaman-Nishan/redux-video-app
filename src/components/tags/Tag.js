@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { tagRemoved, tagSelected } from "../../features/filter/filterSlice";
+import { pageSelected } from "../../features/pagination/paginationSlice";
 
 export default function Tag({ title }) {
     const dispatch = useDispatch();
@@ -16,6 +17,7 @@ export default function Tag({ title }) {
             dispatch(tagRemoved(title));
         } else {
             dispatch(tagSelected(title));
+            dispatch(pageSelected(1));
         }
     };
 
